@@ -12,6 +12,22 @@ set number
 "ctrl+z+, to fire Emmet
 let g:user_emmet_leader_key='<C-Z>'
 
+"NERDTreeTabs Activate Auto Open NERDTree Buffer on new tabs
+au VimEnter * NERDTreeTabsOpen 
+
+let g:nerdtree_tabs_open_on_console_startup = 1 
+autocmd BufWinEnter * :NERDTreeTabsOpen 
+autocmd BufWinEnter * :NERDTreeMirrorOpen
+
+"Auto execute NERDTree when open vim
+au VimEnter * NERDTree
+
+"Change focus to the file when entering Vim
+autocmd VimEnter * wincmd l
+
+noremap <c-s-up> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
+noremap <c-s-down> ddp
+
 "Enable Indentation
 filetype indent on
 
@@ -31,7 +47,6 @@ set shiftwidth=4
 set hlsearch
 
 "shift+enter - Insert line before cursor
-nmap ‡ O<Esc>
 
 "enter - Insert line after cursor
 nmap <CR> o<Esc>
@@ -73,6 +88,8 @@ set t_vb=
 set tm=500
 set noeb vb t_vb=
 
+
+
 "NeoBundle Setup
 if has('vim_starting')
     set nocompatible              
@@ -91,8 +108,16 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note You don't set neobundle setting in .gvimrc!
 "
-"NeoBundle 'mattn/emmet-vim'
-"NeoBundle 'ervandew/supertab'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'ervandew/supertab'
+NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'MarcWeber/vim-addon-mw-utils'
+NeoBundle 'tomtom/tlib_vim'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'garbas/vim-snipmate'
+NeoBundle 'easymotion/vim-easymotion'
+NeoBundle 'jistr/vim-nerdtree-tabs'
 
 call neobundle#end()
 
