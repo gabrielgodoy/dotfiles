@@ -7,7 +7,7 @@
 	name = Gabriel Godoy
 	email = ggodoy@hugeinc.com
 [alias]
-	st = status
+	s = status
 	ac = !git add -A && git commit
 	ch = checkout
 	c = commit
