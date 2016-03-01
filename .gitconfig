@@ -1,0 +1,16 @@
+# This is Git's per-user configuration file.
+[core]
+# Please adapt and uncomment the following lines:
+	user = "Gabriel Godoy"
+	email = "ggodoy@hugeinc.com"
+[user]
+	name = Gabriel Godoy
+	email = ggodoy@hugeinc.com
+[alias]
+	st = status
+	ac = !git add -A && git commit
+	ch = checkout
+	c = commit
+	a = add
+	ps = push
+	pl = pull
