@@ -1,17 +1,18 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
-
-export LC_CTYPE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-export NODE_PATH="/usr/local/lib/node_modules"
+export ZSH=/Users/ggodoy/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="avit"
+ZSH_THEME="steeef"
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -48,14 +49,14 @@ ZSH_THEME="avit"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man colorize web-search nyan sublime lol)
-
-source $ZSH/oh-my-zsh.sh
+plugins=(git)
 
 # User configuration
 
-export PATH="/opt/local/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/mysql/bin/:/usr/bin/pear/:~/.composer/vendor/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -66,6 +67,7 @@ export PATH="/opt/local/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/l
 # else
 #   export EDITOR='mvim'
 # fi
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -77,25 +79,10 @@ export PATH="/opt/local/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/l
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gabrielgodoy='ssh ggodoyoliveira@gabrielgodoy.com'
-alias appsblogfarm='ssh -p 822 appsblogfarm@www.apps.blogfarm.com.br'
-alias ibec='ssh ibeccertificador.org.br@web103.redehost.com.br'
-alias ibecssh='ssh ibeccertificador.org.br@ftp103.redehost.com.br'
-alias brackets='open -a "/Applications/Brackets.app"'
-export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/X11/lib/pkgconfig
-alias ql='qlmanage -p'
-alias laravel='~/.composer/vendor/bin/laravel'
-#export PS1='$(pwd) ▸ '
-
-export PATH="~/.composer/vendor/bin:$PATH" 
-
-source ~/.profile
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-export NVM_DIR="/Users/godoy/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# Aliases
+alias zsh="vim ~/.zshrc"
+alias gitac="git add -A && git commit -am "
+alias lh="cd /Library/Webserver/Documents/huge"
+alias proto="ssh brasil@proto.hugeinc.com"
+alias dt="~/Desktop"
+alias g="git"
