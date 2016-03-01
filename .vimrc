@@ -6,17 +6,17 @@ syntax on
 
 "MouseWheel enabled
 set mouse=a
- 
+
 :set number
 set number
 "ctrl+z+, to fire Emmet
 let g:user_emmet_leader_key='<C-Z>'
 
 "NERDTreeTabs Activate Auto Open NERDTree Buffer on new tabs
-au VimEnter * NERDTreeTabsOpen 
+au VimEnter * NERDTreeTabsOpen
 
-let g:nerdtree_tabs_open_on_console_startup = 1 
-autocmd BufWinEnter * :NERDTreeTabsOpen 
+let g:nerdtree_tabs_open_on_console_startup = 1
+autocmd BufWinEnter * :NERDTreeTabsOpen
 autocmd BufWinEnter * :NERDTreeMirrorOpen
 
 "Auto execute NERDTree when open vim
@@ -92,7 +92,7 @@ set noeb vb t_vb=
 
 "NeoBundle Setup
 if has('vim_starting')
-    set nocompatible              
+    set nocompatible
     "Required
     set runtimepath+=~/.vim/bundle/neobundle.vim
 endif
