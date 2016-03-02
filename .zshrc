@@ -81,7 +81,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Aliases
 alias zsh="vim ~/.zshrc"
-alias gitac="git add -A && git commit -am "
+alias gac="git add -A && git commit -am "
 alias lh="cd /Library/Webserver/Documents/huge"
 alias proto="ssh brasil@proto.hugeinc.com"
 alias dt="~/Desktop"
