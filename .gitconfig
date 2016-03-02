@@ -14,3 +14,4 @@
 	a = add
 	ps = push
 	pl = pull
+	cl = clone
