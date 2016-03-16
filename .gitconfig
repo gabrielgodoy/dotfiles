@@ -2,10 +2,10 @@
 [core]
 # Please adapt and uncomment the following lines:
 	user = "Gabriel Godoy"
-	email = "ggodoy@hugeinc.com"
+	email = "ggodoyoliveira@gmail.com"
 [user]
 	name = Gabriel Godoy
-	email = ggodoy@hugeinc.com
+	email = ggodoyoliveira@gmail.com
 [alias]
 	s = status
 	ac = !git add -A && git commit
