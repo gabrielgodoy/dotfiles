@@ -15,3 +15,4 @@
 	ps = push
 	pl = pull
 	cl = clone
+	l = log --stat --abbrev-commit --decorate
