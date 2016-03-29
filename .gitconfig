@@ -2,7 +2,7 @@
 [core]
 # Please adapt and uncomment the following lines:
 	user = "Gabriel Godoy"
-	email = "ggodoyoliveira@gmail.com"
+	email = "ggodoyliveira@gmail.com"
 [user]
 	name = Gabriel Godoy
 	email = ggodoyoliveira@gmail.com
@@ -15,4 +15,7 @@
 	ps = push
 	pl = pull
 	cl = clone
-	l = log --stat --abbrev-commit --decorate
+        st = status
+        l = log --stat --abbrev-commit --decorate
+[push]
+	default = simple
