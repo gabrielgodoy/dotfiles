@@ -2,10 +2,12 @@
 [core]
 # Please adapt and uncomment the following lines:
 	user = "Gabriel Godoy"
-	email = "ggodoyliveira@gmail.com"
+        email = "ggodoyliveira@gmail.com"
+        safecrlf = false
+        editor = /usr/bin/vim
 [user]
 	name = Gabriel Godoy
-	email = ggodoyoliveira@gmail.com
+        email = ggodoyoliveira@gmail.com
 [alias]
 	s = status
 	ac = !git add -A && git commit
