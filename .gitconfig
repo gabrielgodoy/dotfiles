@@ -13,7 +13,8 @@
 	ac = !git add -A && git commit
 	ch = checkout
 	c = commit
-	a = add
+        a = add
+        d = diff
 	ps = push
 	pl = pull
 	cl = clone
