@@ -17,7 +17,7 @@
 	ps = push
 	pl = pull
 	cl = clone
-        st = status
+        st = stash
         l = log --stat --abbrev-commit --decorate
 [push]
 	default = simple
