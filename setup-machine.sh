@@ -14,6 +14,7 @@ brew cask install iterm2
 brew cask install sketch
 brew cask install dropbox
 brew cask install skitch
+brew cask install chitchat
 brew cask install firefox
 brew cask install google-chrome
 brew cask install google-drive
