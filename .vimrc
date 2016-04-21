@@ -1,14 +1,43 @@
-"Not compatible with older editor like Vi
-set nocompatible
+"Mac OSx: use smooth, antialiased fonts
+set antialias
 
-"Syntax Coloring
-syntax on
+"Indent at the same level of the previous line
+set autoindent
+
+"Uses space when <TAB> is inserted
+set expandtab
+
+"Search | Highlight matches
+set hlsearch
 
 "MouseWheel enabled
 set mouse=a
 
-:set number
+"Not compatible with older editor like Vi
+set nocompatible
+
+"Line numbers in sidebar
 set number
+
+"Identation to 4 espaces
+set shiftwidth=4
+
+"disable sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+set noeb vb t_vb=
+
+"Enable Indentation
+filetype indent on
+
+"Syntax Coloring
+syntax on
+
+"Don't enter in "Ex Mode" when 'Q' is pressed
+nnoremap Q <nop>
+
 "ctrl+z+, to fire Emmet
 let g:user_emmet_leader_key='<C-Z>'
 
@@ -28,26 +57,6 @@ autocmd VimEnter * wincmd l
 noremap <c-s-up> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
 noremap <c-s-down> ddp
 
-"Enable Indentation
-filetype indent on
-
-"Indent at the same level of the previous line
-set autoindent
-
-"Don't enter in "Ex Mode" when 'Q' is pressed
-nnoremap Q <nop>
-
-"replace <TAB> with spaces
-set expandtab
-
-"Identation to 4 espaces
-set shiftwidth=4
-
-"Search Highlighting
-set hlsearch
-
-"shift+enter - Insert line before cursor
-
 "enter - Insert line after cursor
 nmap <CR> o<Esc>
 
@@ -55,7 +64,7 @@ nmap <CR> o<Esc>
 vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>p
 
-" Change cursor shape between insert and normal mode in iTerm2.app
+"Change cursor shape between insert and normal mode in iTerm2.app
 if $TERM_PROGRAM =~ "iTerm"
     let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
     let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
@@ -81,15 +90,6 @@ if version >= 700
     highlight   PmenuThumb    ctermfg=231 ctermbg=238
 endif
 
-"disable sound on errors
-set noerrorbells
-set novisualbell
-set t_vb=
-set tm=500
-set noeb vb t_vb=
-
-
-
 "NeoBundle Setup
 if has('vim_starting')
     set nocompatible
@@ -104,10 +104,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 "Required
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" My Bundles here:
-" Refer to |:NeoBundle-examples|.
-" Note You don't set neobundle setting in .gvimrc!
-"
+" Bundles here:
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'tomtom/tcomment_vim'
