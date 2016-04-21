@@ -30,7 +30,7 @@ set tm=500
 set noeb vb t_vb=
 
 "Enable Indentation
-filetype indent on
+filetype plugin indent on
 
 "Syntax Coloring
 syntax on
@@ -117,9 +117,6 @@ NeoBundle 'easymotion/vim-easymotion'
 NeoBundle 'jistr/vim-nerdtree-tabs'
 
 call neobundle#end()
-
-"Required
-filetype plugin indent on
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
