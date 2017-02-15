@@ -80,10 +80,12 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Aliases
+
+alias lsf="ls -al | grep '^-'"
+alias lsd="ls -ld -- */"
+
 alias zsh="vim ~/.zshrc"
 alias gac="git add -A && git commit -am "
-alias lh="cd /Library/Webserver/Documents/huge"
-alias proto="ssh brasil@proto.hugeinc.com"
 alias dt="~/Desktop"
 alias g="git"
 alias o="open"
