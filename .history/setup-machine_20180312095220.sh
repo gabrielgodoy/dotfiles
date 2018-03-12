@@ -10,9 +10,11 @@ brew install zsh-completions
 #
 # Some cask packages that I like.
 #
+brew cask install atext
 brew cask install alfred
 brew cask install bettertouchtool
 brew cask install caffeine
+brew cask install chitchat
 brew cask install coconutbattery
 brew cask install divvy
 brew cask install dropbox
@@ -21,13 +23,13 @@ brew cask install firefox
 brew cask install google-chrome
 brew cask install google-drive
 brew cask install iterm2
+brew cask install kindle
 brew cask install livereload
+brew cask install macvim
 brew cask install postman
 brew cask install sketch
 brew cask install skitch
 brew cask install skype
-brew cask install slack
 brew cask install spotify
 brew cask install sublime-text
-brew cask install visual-studio-code
 brew cask install vlc
